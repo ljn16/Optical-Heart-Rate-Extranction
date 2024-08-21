@@ -4,7 +4,7 @@ FROM nvidia/cuda:11.7.1-cudnn8-runtime-ubuntu22.04
 RUN apt-get update && apt-get install -y python3 python3-pip
 
 # Install CuPy
-RUN pip3 install cupy-cuda117
+# RUN pip3 install cupy-cuda117
 
 # Install the required libraries
 RUN pip3 install opencv-python numpy cupy cusignal cupyx cupyx.scipy matplotlib
